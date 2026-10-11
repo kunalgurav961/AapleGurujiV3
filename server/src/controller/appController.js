@@ -2,7 +2,9 @@ import pujaModel from "../model/pujaModel.js";
 
 export const getPuja = async (req, res) => {
   try {
-    const pujas = await pujaModel.find({});
+    const pujas = await pujaModel
+      .find({ "availability.active": { $ne: false } })
+      .sort({ displayOrder: 1, "name.en": 1 });
     res.status(200).json({
       success: true,
       data: pujas,

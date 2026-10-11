@@ -6,6 +6,7 @@ export const getPuja = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await api.get("/pujas");
+      console.log(response.data.data)
       return response.data.data;
     } catch (error) {
       return rejectWithValue(

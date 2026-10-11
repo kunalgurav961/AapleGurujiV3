@@ -1,0 +1,1209 @@
+[
+  {
+    "name": {
+      "en": "Vaastu Shanti Puja",
+      "mr": "वास्तुशांती पूजा"
+    },
+    "shortDescription": {
+      "en": "Traditional puja for peace, prosperity and harmony.",
+      "mr": "घरात शांतता, समृद्धी आणि सौहार्द आणण्यासाठी पारंपरिक पूजा."
+    },
+    "description": {
+      "en": "Vaastu Shanti Puja is performed to seek blessings, promote harmony and purify the surroundings. It is commonly conducted before moving into a new house, after renovations, or during personal or professional difficulties. The ritual may include a havan.",
+      "mr": "वास्तुशांती पूजा घर किंवा कार्यालयातील नकारात्मक ऊर्जा दूर करण्यासाठी आणि शांतता, समृद्धी व सौहार्द आणण्यासाठी केली जाते. नवीन घरात प्रवेश करण्यापूर्वी, घराची दुरुस्ती केल्यानंतर किंवा अडचणी असताना ही पूजा केली जाते."
+    },
+    "images": {
+      "thumbnail": "https://media.swipepages.com/2025/7/5fc266f6c0514d0011ea5d22/whatsapp-image-2025-07-21-at-10-38-59-pm-750.webp",
+      "gallery": []
+    },
+    "samagri": {
+      "includedWithPackage": [],
+      "customerArrangedChecklist": [],
+      "householdRequirements": []
+    },
+    "booking": {
+      "advanceAmount": 4000,
+      "advanceDeductedFromTotal": true,
+      "consultationAvailable": true,
+      "contactChannels": [
+        "phone",
+        "whatsapp"
+      ]
+    },
+    "availability": {
+      "active": true,
+      "locations": [
+        "Pune"
+      ]
+    },
+    "_id": "6acb160d5b00cc412baee19a",
+    "slug": "vaastu-shanti",
+    "category": "Griha Puja",
+    "benefits": [
+      "Peace and harmony",
+      "Prosperity and well-being",
+      "Traditional blessings for the home"
+    ],
+    "serviceHighlights": [
+      "Verified Guruji with experience",
+      "Clear puja procedure explained to the family",
+      "Punctuality and traditional attire",
+      "Samagri delivery if selected",
+      "Flexible timing",
+      "Transparent pricing",
+      "Free consultation before booking",
+      "Phone and WhatsApp support"
+    ],
+    "packages": [
+      {
+        "name": {
+          "en": "With Puja Material + Guruji Fees",
+          "mr": "पूजा साहित्य आणि गुरुजी दक्षिणेसह"
+        },
+        "_id": "6acb204210ce18fe3ef4537b",
+        "id": "with-samagri",
+        "price": 15000,
+        "currency": "INR",
+        "includesSamagri": true,
+        "advanceAmount": 4000,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Essential puja materials included",
+          "Guruji Dakshina included",
+          "Material handling included",
+          "Advance booking required"
+        ],
+        "active": true
+      },
+      {
+        "name": {
+          "en": "Only Guruji Fees",
+          "mr": "फक्त गुरुजी दक्षिणा"
+        },
+        "_id": "6acb204210ce18fe3ef4537c",
+        "id": "without-samagri",
+        "price": 12000,
+        "currency": "INR",
+        "includesSamagri": false,
+        "advanceAmount": 4000,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Customer arranges puja materials",
+          "Puja material checklist provided in advance",
+          "Guruji Dakshina included"
+        ],
+        "active": true
+      }
+    ],
+    "displayOrder": 1
+  },
+  {
+    "name": {
+      "en": "Satyanarayan Puja",
+      "mr": "सत्यनारायण पूजा"
+    },
+    "shortDescription": {
+      "en": "A sacred ritual dedicated to Lord Vishnu for happiness, prosperity, and success.",
+      "mr": "सुख, समृद्धी आणि यशासाठी भगवान विष्णूंना समर्पित पारंपरिक पूजा."
+    },
+    "description": {
+      "en": "Satyanarayan Puja is dedicated to Lord Vishnu and performed for happiness, success, and prosperity. It is commonly conducted on full moon days, auspicious occasions, or after significant life events. The ritual includes recitation of the Satyanarayan Katha.",
+      "mr": "सत्यनारायण पूजा भगवान श्री विष्णूंना समर्पित असून सुख, समृद्धी आणि यशासाठी केली जाते. पौर्णिमेच्या दिवशी किंवा शुभ प्रसंगी ही पूजा केली जाते. यामध्ये सत्यनारायण कथा वाचनाचा समावेश असतो."
+    },
+    "images": {
+      "thumbnail": "https://media.swipepages.com/2025/7/5fc266f6c0514d0011ea5d22/whatsapp-image-2025-07-26-at-12-25-43-pm--1--2500.webp",
+      "gallery": []
+    },
+    "samagri": {
+      "includedWithPackage": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "गुलाल",
+        "बुक्का",
+        "अष्टगंध",
+        "सुपारी - 21",
+        "खारीक - 5",
+        "बदाम - 5",
+        "हळकुंड - 5",
+        "खोबऱ्याचे तुकडे - 5",
+        "तांदूळ अर्धा किलो",
+        "गहू अर्धा किलो",
+        "पीठ 1",
+        "जानवी जोड - 1",
+        "मोळी",
+        "अत्तर",
+        "अगरबत्ती",
+        "कापूर",
+        "काडेपेटी",
+        "रांगोळी कलर",
+        "विड्याची पाने 25",
+        "फुले मिक्स",
+        "हार 2",
+        "आंब्याची पाने",
+        "तुळस, दुर्वा, बेल",
+        "फळ 5",
+        "केळी",
+        "केळीची खुंट 4",
+        "चौरंग 1",
+        "हात पुसण्यासाठी वस्त्र",
+        "सुतळी बंडल",
+        "सत्यनारायण फोटो",
+        "गणपती मूर्ती",
+        "गोपाळकृष्ण मूर्ती",
+        "शंख, घंटी",
+        "समई तेलाची",
+        "निरंजन तुपाची",
+        "कापसाच्या वाती",
+        "पंचामृत",
+        "तात 2",
+        "पळ्या 6",
+        "तांब्याचे कलश 2",
+        "तांब्याचे ताम्हण 2",
+        "पळी, पेला",
+        "पातेलं 2",
+        "सुटे पैसे 11/-",
+        "बसायला आसन 3",
+        "प्रसाद"
+      ],
+      "customerArrangedChecklist": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "गुलाल",
+        "बुक्का",
+        "अष्टगंध",
+        "सुपारी - 21",
+        "खारीक - 5",
+        "बदाम - 5",
+        "हळकुंड - 5",
+        "खोबऱ्याचे तुकडे - 5",
+        "तांदूळ अर्धा किलो",
+        "गहू अर्धा किलो",
+        "पीठ 1",
+        "जानवी जोड - 1",
+        "मोळी",
+        "अत्तर",
+        "अगरबत्ती",
+        "कापूर",
+        "काडेपेटी",
+        "रांगोळी कलर",
+        "विड्याची पाने 25",
+        "फुले मिक्स",
+        "हार 2",
+        "आंब्याची पाने",
+        "तुळस, दुर्वा, बेल",
+        "फळ 5",
+        "केळी",
+        "केळीची खुंट 4",
+        "चौरंग 1",
+        "हात पुसण्यासाठी वस्त्र",
+        "सुतळी बंडल",
+        "सत्यनारायण फोटो",
+        "गणपती मूर्ती",
+        "गोपाळकृष्ण मूर्ती",
+        "शंख, घंटी",
+        "समई तेलाची",
+        "निरंजन तुपाची",
+        "कापसाच्या वाती",
+        "पंचामृत",
+        "तात 2",
+        "पळ्या 6",
+        "तांब्याचे कलश 2",
+        "तांब्याचे ताम्हण 2",
+        "पळी, पेला",
+        "पातेलं 2",
+        "सुटे पैसे 11/-",
+        "बसायला आसन 3",
+        "प्रसाद"
+      ],
+      "householdRequirements": []
+    },
+    "booking": {
+      "advanceAmount": 1600,
+      "advanceDeductedFromTotal": true,
+      "consultationAvailable": true,
+      "contactChannels": [
+        "phone",
+        "whatsapp"
+      ]
+    },
+    "availability": {
+      "active": true,
+      "locations": [
+        "Pune"
+      ]
+    },
+    "_id": "6acb160d5b00cc412baee19b",
+    "slug": "satyanarayan",
+    "category": "Griha Puja",
+    "benefits": [
+      "Happiness and prosperity",
+      "Success and good fortune",
+      "Traditional blessings of Lord Vishnu",
+      "Devotion and gratitude",
+      "Removal of obstacles"
+    ],
+    "serviceHighlights": [
+      "Verified Guruji with experience",
+      "Clear puja procedure explained to the family",
+      "Punctuality and traditional attire",
+      "Samagri arranged if selected",
+      "Flexible timing",
+      "Transparent pricing",
+      "Free consultation before booking",
+      "Phone and WhatsApp support"
+    ],
+    "packages": [
+      {
+        "name": {
+          "en": "With Puja Material + Guruji Fees",
+          "mr": "पूजा साहित्य आणि गुरुजी दक्षिणेसह"
+        },
+        "_id": "6acb204210ce18fe3ef4537d",
+        "id": "with-samagri",
+        "price": 4100,
+        "currency": "INR",
+        "includesSamagri": true,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "All essential puja materials included",
+          "Experienced Guruji",
+          "Advance booking required"
+        ],
+        "active": true
+      },
+      {
+        "name": {
+          "en": "Only Guruji Fees",
+          "mr": "फक्त गुरुजी दक्षिणा"
+        },
+        "_id": "6acb204210ce18fe3ef4537e",
+        "id": "without-samagri",
+        "price": 3100,
+        "currency": "INR",
+        "includesSamagri": false,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Customer arranges puja materials",
+          "Guidance from Guruji",
+          "Advance booking required"
+        ],
+        "active": true
+      }
+    ],
+    "displayOrder": 2
+  },
+  {
+    "name": {
+      "en": "Griha Pravesh Puja",
+      "mr": "गृहप्रवेश पूजा"
+    },
+    "shortDescription": {
+      "en": "A traditional ceremony to welcome positive energy, peace, and prosperity into a new home.",
+      "mr": "नवीन घरात सकारात्मक ऊर्जा, शांतता आणि समृद्धीसाठी केली जाणारी पारंपरिक पूजा."
+    },
+    "description": {
+      "en": "Griha Pravesh Puja is performed before entering a new home to invite positive energies and seek blessings for the family. The ceremony includes prayers, offerings, and traditional purification rituals.",
+      "mr": "गृहप्रवेश पूजा नवीन घरात प्रवेश करण्यापूर्वी सकारात्मक ऊर्जा आणि कुटुंबाच्या कल्याणासाठी केली जाते. यामध्ये प्रार्थना, अर्पण आणि पारंपरिक शुद्धीकरण विधींचा समावेश असतो."
+    },
+    "images": {
+      "thumbnail": "https://media.swipepages.com/2025/7/5fc266f6c0514d0011ea5d22/whatsapp-image-2025-07-26-at-12-25-43-pm-1500.webp",
+      "gallery": []
+    },
+    "samagri": {
+      "includedWithPackage": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "तोरण",
+        "गणपती चित्र",
+        "काळी बाहुली",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती",
+        "घरचे देव अभिषेकाला"
+      ],
+      "customerArrangedChecklist": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "तोरण",
+        "गणपती चित्र",
+        "काळी बाहुली",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती",
+        "घरचे देव अभिषेकाला"
+      ],
+      "householdRequirements": []
+    },
+    "booking": {
+      "advanceAmount": 1600,
+      "advanceDeductedFromTotal": true,
+      "consultationAvailable": true,
+      "contactChannels": [
+        "phone",
+        "whatsapp"
+      ]
+    },
+    "availability": {
+      "active": true,
+      "locations": [
+        "Pune"
+      ]
+    },
+    "_id": "6acb160d5b00cc412baee19c",
+    "slug": "griha-pravesh",
+    "category": "Griha Puja",
+    "benefits": [
+      "Welcome positive energy",
+      "Peace and prosperity",
+      "Divine protection for the family",
+      "New beginnings"
+    ],
+    "serviceHighlights": [
+      "Verified Guruji with experience",
+      "Clear puja procedure explained to the family",
+      "Punctuality and traditional attire",
+      "Samagri arranged if selected",
+      "Flexible timing",
+      "Transparent pricing",
+      "Free consultation before booking",
+      "Phone and WhatsApp support"
+    ],
+    "packages": [
+      {
+        "name": {
+          "en": "With Puja Material + Guruji Fees",
+          "mr": "पूजा साहित्य आणि गुरुजी दक्षिणेसह"
+        },
+        "_id": "6acb204210ce18fe3ef4537f",
+        "id": "with-samagri",
+        "price": 4100,
+        "currency": "INR",
+        "includesSamagri": true,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "All puja samagri arranged by us",
+          "Experienced Guruji",
+          "Complete ceremony support"
+        ],
+        "active": true
+      },
+      {
+        "name": {
+          "en": "Only Guruji Fees",
+          "mr": "फक्त गुरुजी दक्षिणा"
+        },
+        "_id": "6acb204210ce18fe3ef45380",
+        "id": "without-samagri",
+        "price": 3100,
+        "currency": "INR",
+        "includesSamagri": false,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Customer arranges puja materials",
+          "Guidance from Guruji",
+          "Lower-cost option"
+        ],
+        "active": true
+      }
+    ],
+    "displayOrder": 3
+  },
+  {
+    "name": {
+      "en": "Mangalagaur Puja",
+      "mr": "मंगळागौर पूजा"
+    },
+    "shortDescription": {
+      "en": "A traditional Maharashtrian ritual for prosperity, marital happiness, and family well-being.",
+      "mr": "सौभाग्य, वैवाहिक सुख आणि कुटुंबाच्या कल्याणासाठी केली जाणारी पारंपरिक पूजा."
+    },
+    "description": {
+      "en": "Mangalagaur Puja is performed by married women in Maharashtra and dedicated to Goddess Gauri. The ritual celebrates prosperity, marital happiness, and family well-being.",
+      "mr": "मंगळागौर पूजा महाराष्ट्रातील विवाहित महिलांकडून केली जाते. ही देवी गौरीला समर्पित असून समृद्धी, वैवाहिक सुख आणि कुटुंबाच्या कल्याणाचे प्रतीक आहे."
+    },
+    "images": {
+      "thumbnail": "https://media.swipepages.com/2025/7/5fc266f6c0514d0011ea5d22/whatsapp-image-2025-07-26-at-1-08-29-pm-1500.webp",
+      "gallery": []
+    },
+    "samagri": {
+      "includedWithPackage": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "बुक्का",
+        "गुलाल",
+        "अष्टगंध",
+        "सुपारी - 21",
+        "खारीक - 5",
+        "बदाम - 5",
+        "हळकुंड - 5",
+        "खोबऱ्याचे तुकडे - 5",
+        "तांदूळ अर्धा किलो",
+        "गहू अर्धा किलो",
+        "पीस 1",
+        "जानवी जोड - 1",
+        "मोळी",
+        "अत्तर",
+        "अगरबत्ती",
+        "कापूर",
+        "काडेपेटी",
+        "रांगोळी कलर",
+        "विड्याची पाने 25",
+        "फुले मिक्स",
+        "हार 2",
+        "आंब्याची पाने",
+        "पान",
+        "वायन दान",
+        "तुळस, दुर्वा, बेल",
+        "फळ 5",
+        "केळी",
+        "चौरंग 1",
+        "हात पुसण्यासाठी वस्त्र",
+        "गणपती मूर्ती",
+        "मंगळागौरी मूर्ती",
+        "शंख, घंटी",
+        "समई तेलाची",
+        "निरंजन तुपाची",
+        "कापसाच्या वाती",
+        "पंचामृत",
+        "तात 2",
+        "वाट्या 6",
+        "तांब्याचे कलश 2",
+        "तांब्याचे ताम्हण 2",
+        "पळी, पेला",
+        "पातेलं 2",
+        "सुटे पैसे 11/-",
+        "बसायला आसन 3",
+        "पेढे"
+      ],
+      "customerArrangedChecklist": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "बुक्का",
+        "गुलाल",
+        "अष्टगंध",
+        "सुपारी - 21",
+        "खारीक - 5",
+        "बदाम - 5",
+        "हळकुंड - 5",
+        "खोबऱ्याचे तुकडे - 5",
+        "तांदूळ अर्धा किलो",
+        "गहू अर्धा किलो",
+        "पीस 1",
+        "जानवी जोड - 1",
+        "मोळी",
+        "अत्तर",
+        "अगरबत्ती",
+        "कापूर",
+        "काडेपेटी",
+        "रांगोळी कलर",
+        "विड्याची पाने 25",
+        "फुले मिक्स",
+        "हार 2",
+        "आंब्याची पाने",
+        "पान",
+        "वायन दान",
+        "तुळस, दुर्वा, बेल",
+        "फळ 5",
+        "केळी",
+        "चौरंग 1",
+        "हात पुसण्यासाठी वस्त्र",
+        "गणपती मूर्ती",
+        "मंगळागौरी मूर्ती",
+        "शंख, घंटी",
+        "समई तेलाची",
+        "निरंजन तुपाची",
+        "कापसाच्या वाती",
+        "पंचामृत",
+        "तात 2",
+        "वाट्या 6",
+        "तांब्याचे कलश 2",
+        "तांब्याचे ताम्हण 2",
+        "पळी, पेला",
+        "पातेलं 2",
+        "सुटे पैसे 11/-",
+        "बसायला आसन 3",
+        "पेढे"
+      ],
+      "householdRequirements": []
+    },
+    "booking": {
+      "advanceAmount": 1600,
+      "advanceDeductedFromTotal": true,
+      "consultationAvailable": true,
+      "contactChannels": [
+        "phone",
+        "whatsapp"
+      ]
+    },
+    "availability": {
+      "active": true,
+      "locations": [
+        "Pune"
+      ]
+    },
+    "_id": "6acb160d5b00cc412baee19d",
+    "slug": "mangalagaur",
+    "category": "Griha Puja",
+    "benefits": [
+      "Prosperity and family well-being",
+      "Marital happiness",
+      "Traditional worship of Goddess Gauri"
+    ],
+    "serviceHighlights": [
+      "Verified Guruji with experience",
+      "Clear puja procedure explained to the family",
+      "Punctuality and traditional attire",
+      "Samagri arranged if selected",
+      "Flexible timing",
+      "Transparent pricing",
+      "Free consultation before booking",
+      "Phone and WhatsApp support"
+    ],
+    "packages": [
+      {
+        "name": {
+          "en": "With Puja Material + Guruji Fees",
+          "mr": "पूजा साहित्य आणि गुरुजी दक्षिणेसह"
+        },
+        "_id": "6acb204210ce18fe3ef45381",
+        "id": "with-samagri",
+        "price": 4100,
+        "currency": "INR",
+        "includesSamagri": true,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "All puja samagri arranged by us",
+          "Experienced Guruji",
+          "Complete ceremony support"
+        ],
+        "active": true
+      },
+      {
+        "name": {
+          "en": "Only Guruji Fees",
+          "mr": "फक्त गुरुजी दक्षिणा"
+        },
+        "_id": "6acb204210ce18fe3ef45382",
+        "id": "without-samagri",
+        "price": 3100,
+        "currency": "INR",
+        "includesSamagri": false,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Customer arranges puja materials",
+          "Guidance from Guruji",
+          "Lower-cost option"
+        ],
+        "active": true
+      }
+    ],
+    "displayOrder": 4
+  },
+  {
+    "name": {
+      "en": "Rudra Abhishek Puja",
+      "mr": "रुद्र अभिषेक पूजा"
+    },
+    "shortDescription": {
+      "en": "A sacred ritual performed with five priests to seek blessings for health, wealth, and spiritual growth.",
+      "mr": "आरोग्य, संपत्ती आणि आध्यात्मिक प्रगतीसाठी केली जाणारी पवित्र पूजा."
+    },
+    "description": {
+      "en": "Rudra Abhishek Puja is performed with five priests. The ritual includes chanting Rudra Mantras, offerings to Lord Shiva, and prayers for health, wealth, peace, and spiritual growth.",
+      "mr": "रुद्र अभिषेक पूजा पाच ब्राह्मणांच्या साहाय्याने केली जाते. या विधीमध्ये रुद्र मंत्रांचा उच्चार, भगवान शंकराला अर्पण आणि आरोग्य, संपत्ती, शांतता व आध्यात्मिक प्रगतीसाठी प्रार्थना केली जाते."
+    },
+    "images": {
+      "thumbnail": "https://media.swipepages.com/2025/7/5fc266f6c0514d0011ea5d22/whatsapp-image-2025-07-26-at-12-25-43-pm--2--1500.webp",
+      "gallery": []
+    },
+    "samagri": {
+      "includedWithPackage": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "तोरण",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा, बेल 108",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती",
+        "महादेव मूर्ती",
+        "अभिषेकाला दूध 1 लिटर"
+      ],
+      "customerArrangedChecklist": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अष्टगंध",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "तोरण",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा, बेल 108",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती",
+        "महादेव मूर्ती",
+        "अभिषेकाला दूध 1 लिटर"
+      ],
+      "householdRequirements": []
+    },
+    "booking": {
+      "advanceAmount": 1600,
+      "advanceDeductedFromTotal": true,
+      "consultationAvailable": true,
+      "contactChannels": [
+        "phone",
+        "whatsapp"
+      ]
+    },
+    "availability": {
+      "active": true,
+      "locations": [
+        "Pune"
+      ]
+    },
+    "_id": "6acb160d5b00cc412baee19e",
+    "slug": "rudra-abhishek",
+    "category": "Shiva Puja",
+    "benefits": [
+      "Prayers for good health",
+      "Prosperity and wealth",
+      "Spiritual growth",
+      "Removal of obstacles",
+      "Peace and prosperity"
+    ],
+    "serviceHighlights": [
+      "Verified Guruji with experience",
+      "Clear puja procedure explained to the family",
+      "Punctuality and traditional attire",
+      "Samagri arranged if selected",
+      "Flexible timing",
+      "Transparent pricing",
+      "Free consultation before booking",
+      "Phone and WhatsApp support"
+    ],
+    "packages": [
+      {
+        "name": {
+          "en": "With Puja Material + Guruji Fees",
+          "mr": "पूजा साहित्य आणि गुरुजी दक्षिणेसह"
+        },
+        "_id": "6acb204210ce18fe3ef45383",
+        "id": "with-samagri",
+        "price": 3700,
+        "currency": "INR",
+        "includesSamagri": true,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "All puja samagri arranged by us",
+          "Experienced Guruji",
+          "Complete ceremony support"
+        ],
+        "active": true
+      },
+      {
+        "name": {
+          "en": "Only Guruji Fees",
+          "mr": "फक्त गुरुजी दक्षिणा"
+        },
+        "_id": "6acb204210ce18fe3ef45384",
+        "id": "without-samagri",
+        "price": 3100,
+        "currency": "INR",
+        "includesSamagri": false,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Customer arranges puja materials",
+          "Guidance from Guruji",
+          "Lower-cost option"
+        ],
+        "active": true
+      }
+    ],
+    "displayOrder": 5
+  },
+  {
+    "name": {
+      "en": "Laghu Rudra Abhishek Puja",
+      "mr": "लघुरुद्र अभिषेक पूजा"
+    },
+    "shortDescription": {
+      "en": "A sacred ritual performed with 11 priests for health, prosperity, family peace, and spiritual growth.",
+      "mr": "आरोग्य, समृद्धी, कौटुंबिक शांतता आणि आध्यात्मिक प्रगतीसाठी केली जाणारी पवित्र पूजा."
+    },
+    "description": {
+      "en": "Laghu Rudra Puja is performed with 11 priests to seek blessings for health, family peace, and prosperity. The ritual includes chanting Rudra Mantras and prayers for harmony and well-being.",
+      "mr": "लघुरुद्र पूजा ११ ब्राह्मणांच्या साहाय्याने केली जाते. आरोग्य, कौटुंबिक शांतता आणि समृद्धीसाठी रुद्र मंत्रांचा उच्चार व प्रार्थना केली जाते."
+    },
+    "images": {
+      "thumbnail": "https://media.swipepages.com/2025/7/5fc266f6c0514d0011ea5d22/whatsapp-image-2025-07-26-at-12-25-43-pm--5--1500.webp",
+      "gallery": []
+    },
+    "samagri": {
+      "includedWithPackage": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अष्टगंध",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "तोरण",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा, बेल 108",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती",
+        "महादेव मूर्ती",
+        "अभिषेकाला दूध 4 लिटर"
+      ],
+      "customerArrangedChecklist": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अष्टगंध",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "तोरण",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा, बेल 108",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती",
+        "महादेव मूर्ती",
+        "अभिषेकाला दूध 4 लिटर"
+      ],
+      "householdRequirements": []
+    },
+    "booking": {
+      "advanceAmount": 4000,
+      "advanceDeductedFromTotal": true,
+      "consultationAvailable": true,
+      "contactChannels": [
+        "phone",
+        "whatsapp"
+      ]
+    },
+    "availability": {
+      "active": true,
+      "locations": [
+        "Pune"
+      ]
+    },
+    "_id": "6acb160d5b00cc412baee19f",
+    "slug": "laghu-rudra-abhishek",
+    "category": "Shiva Puja",
+    "benefits": [
+      "Prayers for improved health",
+      "Spiritual and material prosperity",
+      "Family peace and harmony",
+      "Removal of obstacles",
+      "Divine blessings for personal goals"
+    ],
+    "serviceHighlights": [
+      "Verified Guruji with experience",
+      "Clear puja procedure explained to the family",
+      "Punctuality and traditional attire",
+      "Samagri arranged if selected",
+      "Flexible timing",
+      "Transparent pricing",
+      "Free consultation before booking",
+      "Phone and WhatsApp support"
+    ],
+    "packages": [
+      {
+        "name": {
+          "en": "With Puja Material + Guruji Fees",
+          "mr": "पूजा साहित्य आणि गुरुजी दक्षिणेसह"
+        },
+        "_id": "6acb204210ce18fe3ef45385",
+        "id": "with-samagri",
+        "price": 17000,
+        "currency": "INR",
+        "includesSamagri": true,
+        "advanceAmount": 4000,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "All puja samagri arranged by us",
+          "Experienced Guruji",
+          "Complete ceremony support"
+        ],
+        "active": true
+      },
+      {
+        "name": {
+          "en": "Only Guruji Fees",
+          "mr": "फक्त गुरुजी दक्षिणा"
+        },
+        "_id": "6acb204210ce18fe3ef45386",
+        "id": "without-samagri",
+        "price": 15000,
+        "currency": "INR",
+        "includesSamagri": false,
+        "advanceAmount": 4000,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Customer arranges puja materials",
+          "Guidance from Guruji",
+          "Lower-cost option"
+        ],
+        "active": true
+      }
+    ],
+    "displayOrder": 6
+  },
+  {
+    "name": {
+      "en": "Office Opening Pooja",
+      "mr": "ऑफिस ओपनिंग पूजा"
+    },
+    "shortDescription": {
+      "en": "A sacred ceremony to seek success, growth, and prosperity before inaugurating a new office or business.",
+      "mr": "नवीन ऑफिस किंवा व्यवसाय सुरू करण्यापूर्वी यश, प्रगती आणि समृद्धीसाठी केली जाणारी पूजा."
+    },
+    "description": {
+      "en": "Office Opening Pooja is performed before inaugurating a new office or business to seek success and prosperity. The ritual includes prayers to deities, sacred offerings, and purification of the office space.",
+      "mr": "ऑफिस ओपनिंग पूजा नवीन ऑफिस किंवा व्यवसाय सुरू करण्यापूर्वी यश आणि समृद्धीसाठी केली जाते. यामध्ये देवतांना प्रार्थना, पवित्र अर्पण आणि ऑफिसच्या जागेचे शुद्धीकरण केले जाते."
+    },
+    "images": {
+      "thumbnail": "https://media.swipepages.com/2025/7/5fc266f6c0514d0011ea5d22/whatsapp-image-2025-07-26-at-12-25-43-pm--3--1500.webp",
+      "gallery": []
+    },
+    "samagri": {
+      "includedWithPackage": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अष्टगंध",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती"
+      ],
+      "customerArrangedChecklist": [
+        "श्रीफळ 2",
+        "हळद",
+        "कुंकू",
+        "अष्टगंध",
+        "अत्तर",
+        "जानवे 2",
+        "तांदूळ अर्धा किलो",
+        "ब्लाउज पीस 1",
+        "विड्याची पाने 25",
+        "कलश 2",
+        "पळी",
+        "पेला",
+        "ताम्हण",
+        "खारीक 5",
+        "बदाम 5",
+        "हळकुंड 5",
+        "खोबरं 5",
+        "सुपारी 6",
+        "चौरंग 1",
+        "आसन 3",
+        "सुटे फूल",
+        "तुळस, दुर्वा",
+        "हार 2",
+        "फळ 5",
+        "पंचामृत",
+        "प्रसाद किंवा पेढे",
+        "तुपाचा दिवा",
+        "तेलाची समई",
+        "तेल, वात, तूप",
+        "आरती कापूर",
+        "तात 2",
+        "वाट्या 6",
+        "पातेलं 1",
+        "उदबत्ती",
+        "काडेपेटी",
+        "रांगोळी",
+        "गणपती मूर्ती"
+      ],
+      "householdRequirements": []
+    },
+    "booking": {
+      "advanceAmount": 1600,
+      "advanceDeductedFromTotal": true,
+      "consultationAvailable": true,
+      "contactChannels": [
+        "phone",
+        "whatsapp"
+      ]
+    },
+    "availability": {
+      "active": true,
+      "locations": [
+        "Pune"
+      ]
+    },
+    "_id": "6acb160d5b00cc412baee1a0",
+    "slug": "office-opening-puja",
+    "category": "Business Puja",
+    "benefits": [
+      "Prayers for business success",
+      "Growth and prosperity",
+      "Auspicious new beginnings",
+      "Traditional purification of the workplace"
+    ],
+    "serviceHighlights": [
+      "Verified Guruji with experience",
+      "Clear puja procedure explained to the family",
+      "Punctuality and traditional attire",
+      "Samagri arranged if selected",
+      "Flexible timing",
+      "Transparent pricing",
+      "Free consultation before booking",
+      "Phone and WhatsApp support"
+    ],
+    "packages": [
+      {
+        "name": {
+          "en": "With Puja Material + Guruji Fees",
+          "mr": "पूजा साहित्य आणि गुरुजी दक्षिणेसह"
+        },
+        "_id": "6acb204210ce18fe3ef45387",
+        "id": "with-samagri",
+        "price": 4100,
+        "currency": "INR",
+        "includesSamagri": true,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "All puja samagri arranged by us",
+          "Experienced Guruji",
+          "Complete ceremony support"
+        ],
+        "active": true
+      },
+      {
+        "name": {
+          "en": "Only Guruji Fees",
+          "mr": "फक्त गुरुजी दक्षिणा"
+        },
+        "_id": "6acb204210ce18fe3ef45388",
+        "id": "without-samagri",
+        "price": 3100,
+        "currency": "INR",
+        "includesSamagri": false,
+        "advanceAmount": 1600,
+        "advanceDeductedFromTotal": true,
+        "features": [
+          "Customer arranges puja materials",
+          "Guidance from Guruji",
+          "Lower-cost option"
+        ],
+        "active": true
+      }
+    ],
+    "displayOrder": 7
+  }
+]

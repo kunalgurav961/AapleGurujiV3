@@ -13,6 +13,7 @@ const PoojaCard = ({ pooja }) => {
     navigate(`/book?pujaId=${pooja._id}`);
   };
 
+  console.log(pooja.image)
   return (
     <article
       onClick={handleClick}
@@ -29,21 +30,22 @@ const PoojaCard = ({ pooja }) => {
       "
     >
       {/* Image */}
-      <img
-        src={pooja.images?.thumbnail || pooja.image}
-        alt={pooja.name?.en || pooja.name}
+      
+<img
+  src={pooja.images?.[0]?.thumbnail || pooja.image}
+  alt={pooja.name?.en || pooja.name}
+  onError={(e) => {
+    console.error("Image failed to load:", e.currentTarget.src);
+  }}
+  className="
+    absolute inset-0
+    h-full w-full
+    object-cover
+    transition-transform duration-700
+    group-hover:scale-105
+  "
+/>
 
-        className="
-          absolute
-          inset-0
-          h-full
-          w-full
-          object-cover
-          transition-transform
-          duration-700
-          group-hover:scale-105
-        "
-      />
 
       {/* Overlay */}
       <div

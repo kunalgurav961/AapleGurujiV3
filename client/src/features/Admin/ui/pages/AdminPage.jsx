@@ -38,6 +38,45 @@ const emptySamagriDraft = {
   householdRequirements: "",
 };
 
+const emptyPujaDraft = {
+  slug: "",
+  nameEn: "",
+  nameMr: "",
+  category: "",
+  shortDescriptionEn: "",
+  shortDescriptionMr: "",
+  descriptionEn: "",
+  descriptionMr: "",
+  thumbnail: "",
+  displayOrder: 0,
+  active: true,
+};
+
+const toPujaDraft = (puja) => ({
+  slug: puja.slug || "",
+  nameEn: puja.name?.en || "",
+  nameMr: puja.name?.mr || "",
+  category: puja.category || "",
+  shortDescriptionEn: puja.shortDescription?.en || "",
+  shortDescriptionMr: puja.shortDescription?.mr || "",
+  descriptionEn: puja.description?.en || "",
+  descriptionMr: puja.description?.mr || "",
+  thumbnail: puja.images?.thumbnail || "",
+  displayOrder: puja.displayOrder || 0,
+  active: puja.availability?.active !== false,
+});
+
+const toPujaPayload = (draft) => ({
+  slug: draft.slug,
+  name: { en: draft.nameEn, mr: draft.nameMr },
+  category: draft.category,
+  shortDescription: { en: draft.shortDescriptionEn, mr: draft.shortDescriptionMr },
+  description: { en: draft.descriptionEn, mr: draft.descriptionMr },
+  images: { thumbnail: draft.thumbnail, gallery: [] },
+  displayOrder: Number(draft.displayOrder),
+  availability: { active: draft.active, locations: [] },
+});
+
 const toLines = (items = []) => items.join("\n");
 
 const toSamagriDraft = (samagri = {}) =>
@@ -72,6 +111,9 @@ const AdminPage = () => {
   const [users, setUsers] = useState([]);
   const [pujas, setPujas] = useState([]);
   const [selectedPujaId, setSelectedPujaId] = useState("");
+  const [pujaDraft, setPujaDraft] = useState(emptyPujaDraft);
+  const [editingPujaId, setEditingPujaId] = useState(null);
+  const [addingPuja, setAddingPuja] = useState(false);
   const [samagriDraft, setSamagriDraft] = useState(emptySamagriDraft);
   const [newUser, setNewUser] = useState(emptyUser);
   const [editingUser, setEditingUser] = useState(null);
@@ -91,12 +133,12 @@ const AdminPage = () => {
     setLoading(true);
     setError("");
     try {
-      const [usersResponse, samagriResponse] = await Promise.all([
+      const [usersResponse, pujasResponse] = await Promise.all([
         api.get("/admin/users", { headers }),
-        api.get("/admin/samagri", { headers }),
+        api.get("/admin/pujas", { headers }),
       ]);
       setUsers(usersResponse.data.data);
-      setPujas(samagriResponse.data.data);
+      setPujas(pujasResponse.data.data);
     } catch (requestError) {
       setError(getErrorMessage(requestError, "Unable to load admin data"));
     } finally {
@@ -234,12 +276,41 @@ const AdminPage = () => {
     }
   };
 
+  const savePuja = async (event) => {
+    event.preventDefault();
+    setSaving(true);
+    setError("");
+    try {
+      const payload = toPujaPayload(pujaDraft);
+      const currentPuja = pujas.find((puja) => puja._id === editingPujaId);
+      if (currentPuja) {
+        payload.images.gallery = currentPuja.images?.gallery || [];
+        payload.availability.locations = currentPuja.availability?.locations || [];
+      }
+      const response = editingPujaId
+        ? await api.patch(`/admin/pujas/${editingPujaId}`, payload, { headers })
+        : await api.post("/admin/pujas", payload, { headers });
+      const savedPuja = response.data.data;
+      setPujas((current) => editingPujaId
+        ? current.map((puja) => puja._id === savedPuja._id ? savedPuja : puja)
+        : [...current, savedPuja].sort((a, b) => a.displayOrder - b.displayOrder));
+      setPujaDraft(emptyPujaDraft);
+      setEditingPujaId(null);
+      setAddingPuja(false);
+      setNotice(editingPujaId ? "Puja updated" : "Puja added");
+    } catch (requestError) {
+      setError(getErrorMessage(requestError, "Unable to save puja"));
+    } finally {
+      setSaving(false);
+    }
+  };
+
   if (!adminKey) {
     return (
       <main className="mx-auto min-h-screen max-w-xl bg-slate-100 p-6 text-slate-900">
         <h1 className="text-2xl font-bold">Admin access</h1>
         <p className="mt-2 text-sm text-slate-600">
-          Enter the server&apos;s admin access key to manage users and Samagri.
+          Enter the server&apos;s admin access key to manage pujas, users, and Samagri.
         </p>
         <form className="mt-6 space-y-4" onSubmit={saveAdminKey}>
           <input
@@ -265,7 +336,7 @@ const AdminPage = () => {
         <header className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <h1 className="text-2xl font-bold">Admin panel</h1>
-            <p className="text-sm text-slate-600">Manage customer leads and Puja Samagri.</p>
+            <p className="text-sm text-slate-600">Manage pujas, customer leads, and Samagri.</p>
           </div>
           <div className="flex gap-2">
             <button className="rounded border border-slate-400 px-3 py-2" type="button" onClick={loadAdminData}>
@@ -280,6 +351,39 @@ const AdminPage = () => {
         {loading && <p className="text-sm text-slate-600">Loading admin data…</p>}
         {error && <p className="rounded border border-red-300 bg-red-50 p-3 text-sm text-red-800">{error}</p>}
         {notice && <p className="rounded border border-green-300 bg-green-50 p-3 text-sm text-green-800">{notice}</p>}
+
+        <section className="space-y-4 rounded border border-slate-300 bg-white p-5">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h2 className="text-xl font-semibold">Pujas</h2>
+              <p className="text-sm text-slate-600">Add pujas and edit the details shown in the public puja catalog.</p>
+            </div>
+            <button className="rounded bg-slate-900 px-4 py-2 text-white" type="button" onClick={() => { setAddingPuja(true); setEditingPujaId(null); setPujaDraft(emptyPujaDraft); }}>Add puja</button>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[600px] text-left text-sm">
+              <thead className="border-b border-slate-200 text-slate-600"><tr><th className="p-2">Name</th><th className="p-2">Category</th><th className="p-2">Status</th><th className="p-2">Order</th><th className="p-2">Action</th></tr></thead>
+              <tbody>{pujas.map((puja) => <tr className="border-b border-slate-100" key={puja._id}>
+                <td className="p-2">{puja.name?.en || puja.slug}</td><td className="p-2">{puja.category}</td><td className="p-2">{puja.availability?.active === false ? "Hidden" : "Shown"}</td><td className="p-2">{puja.displayOrder || 0}</td>
+                <td className="p-2"><button className="underline" type="button" onClick={() => { setAddingPuja(false); setEditingPujaId(puja._id); setPujaDraft(toPujaDraft(puja)); }}>Edit</button></td>
+              </tr>)}{!pujas.length && <tr><td className="p-3 text-slate-600" colSpan="5">No pujas found.</td></tr>}</tbody>
+            </table>
+          </div>
+          {(addingPuja || editingPujaId) && <form className="grid gap-3 border-t border-slate-200 pt-4 md:grid-cols-2" onSubmit={savePuja}>
+            <input className={inputClass} value={pujaDraft.nameEn} onChange={(e) => setPujaDraft({ ...pujaDraft, nameEn: e.target.value })} placeholder="Name (English)" required />
+            <input className={inputClass} value={pujaDraft.nameMr} onChange={(e) => setPujaDraft({ ...pujaDraft, nameMr: e.target.value })} placeholder="Name (Marathi)" required />
+            <input className={inputClass} value={pujaDraft.slug} onChange={(e) => setPujaDraft({ ...pujaDraft, slug: e.target.value })} placeholder="URL slug" required />
+            <input className={inputClass} value={pujaDraft.category} onChange={(e) => setPujaDraft({ ...pujaDraft, category: e.target.value })} placeholder="Category" required />
+            <input className={inputClass} value={pujaDraft.shortDescriptionEn} onChange={(e) => setPujaDraft({ ...pujaDraft, shortDescriptionEn: e.target.value })} placeholder="Short description (English)" />
+            <input className={inputClass} value={pujaDraft.shortDescriptionMr} onChange={(e) => setPujaDraft({ ...pujaDraft, shortDescriptionMr: e.target.value })} placeholder="Short description (Marathi)" />
+            <textarea className={`${inputClass} min-h-24`} value={pujaDraft.descriptionEn} onChange={(e) => setPujaDraft({ ...pujaDraft, descriptionEn: e.target.value })} placeholder="Description (English)" />
+            <textarea className={`${inputClass} min-h-24`} value={pujaDraft.descriptionMr} onChange={(e) => setPujaDraft({ ...pujaDraft, descriptionMr: e.target.value })} placeholder="Description (Marathi)" />
+            <input className={inputClass} value={pujaDraft.thumbnail} onChange={(e) => setPujaDraft({ ...pujaDraft, thumbnail: e.target.value })} placeholder="Thumbnail image URL" />
+            <input className={inputClass} type="number" min="0" value={pujaDraft.displayOrder} onChange={(e) => setPujaDraft({ ...pujaDraft, displayOrder: e.target.value })} placeholder="Display order" />
+            <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={pujaDraft.active} onChange={(e) => setPujaDraft({ ...pujaDraft, active: e.target.checked })} /> Show in puja catalog</label>
+            <div className="flex gap-2"><button className="rounded bg-slate-900 px-4 py-2 text-white disabled:opacity-50" disabled={saving} type="submit">{editingPujaId ? "Save puja" : "Create puja"}</button><button className="rounded border border-slate-400 px-4 py-2" type="button" onClick={() => { setAddingPuja(false); setEditingPujaId(null); }}>Cancel</button></div>
+          </form>}
+        </section>
 
         <section className="space-y-4 rounded border border-slate-300 bg-white p-5">
           <div>
