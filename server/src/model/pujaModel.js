@@ -2,6 +2,12 @@ import mongoose from "mongoose";
 
 const pujaSchema = new mongoose.Schema(
   {
+    // Existing Puja records use string IDs. Declaring this explicitly prevents
+    // Mongoose from casting route IDs to ObjectId values during findById().
+    _id: {
+      type: String,
+      required: true,
+    },
     slug: {
       type: String,
       required: true,

@@ -1,11 +1,4 @@
 import nodemailer from "nodemailer";
-import { config } from "dotenv";
-config();
-
-console.log("Email Configuration:");
-console.log("EMAIL_HOST:", process.env.EMAIL_HOST);
-console.log("EMAIL_PORT:", process.env.EMAIL_PORT);
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
 
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST || "smtp.hostinger.com",

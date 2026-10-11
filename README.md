@@ -269,6 +269,13 @@ The frontend will run on `http://localhost:5173`
 - `GET /api/bookings/:reference` - Get booking by reference
 - `POST /api/bookings/calculate-price` - Calculate price for puja
 
+### Admin
+
+The `/admin` workspace manages customer leads and Puja Samagri. Set a strong
+`ADMIN_API_KEY` in `server/.env`, restart the backend, then open `/admin` and
+enter the same key. The key is kept in the browser session only and is sent as
+an `x-admin-key` header for each admin request.
+
 ## User Journey
 
 1. **Landing Page**
@@ -362,6 +369,7 @@ EMAIL_USER=<email-user>
 EMAIL_PASS=<email-password>
 EMAIL_FROM=<sender-email>
 ADMIN_EMAIL=<admin-email>
+ADMIN_API_KEY=<long-random-admin-secret>
 OTP_EXPIRY_MINUTES=5
 MAX_OTP_ATTEMPTS=3
 OTP_RESEND_COOLDOWN_SECONDS=60

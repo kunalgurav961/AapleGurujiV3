@@ -1,9 +1,46 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ArrowUpRight, Sparkles, Heart } from "lucide-react";
+import { Link, useNavigate } from "react-router";
+import { useDispatch, useSelector } from "react-redux";
 
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { getPuja } from "../../state/pujaAction";
+
+const navigationLinks = [
+  { label: "Home", to: "/" },
+  { label: "Pujas", to: "/pujas" },
+  { label: "Astrology", to: "/astrology" },
+  { label: "Puja Samagri", to: "/samagri" },
+  { label: "Customers", to: "/customers" },
+];
+
+const socialLinks = [
+  { label: "Instagram", href: "#", Icon: FaInstagram },
+  { label: "Facebook", href: "#", Icon: FaFacebookF },
+  { label: "YouTube", href: "#", Icon: FaYoutube },
+];
+
+const legalLinks = ["Privacy", "Terms", "Refund Policy"];
 
 const Footer = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { pujas, loading } = useSelector((state) => state.puja);
+
+  useEffect(() => {
+    if (!pujas && !loading) {
+      dispatch(getPuja());
+    }
+  }, [dispatch, loading, pujas]);
+
+  const serviceLinks = pujas
+    ?.filter((puja) => puja.availability?.active !== false)
+    .slice(0, 6)
+    .map((puja) => ({
+      label: puja.name?.en || puja.name,
+      to: `/puja/${puja._id}`,
+    })) || [{ label: loading ? "Loading pujas..." : "Explore all pujas", to: "/pujas" }];
+
   return (
     <footer className="relative overflow-hidden bg-[#080808] text-white">
       {/* =====================================================
@@ -98,6 +135,8 @@ const Footer = () => {
             </p>
 
             <button
+              type="button"
+              onClick={() => navigate("/book")}
               className="
                 group
                 flex
@@ -162,10 +201,12 @@ const Footer = () => {
 
             {/* Socials */}
             <div className="mt-8 flex gap-3">
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="
+              {socialLinks.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="
                   flex
                   h-11
                   w-11
@@ -182,57 +223,10 @@ const Footer = () => {
                   hover:bg-orange-300
                   hover:text-black
                 "
-              >
-                <FaInstagram size={17} />
-              </a>
-
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="
-                  flex
-                  h-11
-                  w-11
-                  items-center
-                  justify-center
-                  rounded-full
-                  border
-                  border-white/10
-                  bg-white/[0.03]
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:border-orange-300/40
-                  hover:bg-orange-300
-                  hover:text-black
-                "
-              >
-                <FaFacebookF size={17} />
-              </a>
-
-              <a
-                href="#"
-                aria-label="YouTube"
-                className="
-                  flex
-                  h-11
-                  w-11
-                  items-center
-                  justify-center
-                  rounded-full
-                  border
-                  border-white/10
-                  bg-white/[0.03]
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:border-orange-300/40
-                  hover:bg-orange-300
-                  hover:text-black
-                "
-              >
-                <FaYoutube size={17} />
-              </a>
+                >
+                  {React.createElement(Icon, { size: 17 })}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -243,11 +237,10 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-col gap-3">
-              {["Home", "Pujas", "Pandits", "About Us", "Contact"].map(
-                (item) => (
-                  <a
-                    key={item}
-                    href="#"
+              {navigationLinks.map(({ label, to }) => (
+                  <Link
+                    key={label}
+                    to={to}
                     className="
                     group
                     flex
@@ -260,7 +253,7 @@ const Footer = () => {
                     hover:text-white
                   "
                   >
-                    {item}
+                    {label}
 
                     <ArrowUpRight
                       size={12}
@@ -273,9 +266,8 @@ const Footer = () => {
                       group-hover:opacity-100
                     "
                     />
-                  </a>
-                ),
-              )}
+                  </Link>
+              ))}
             </div>
           </div>
 
@@ -286,17 +278,10 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-col gap-3">
-              {[
-                "Puja Booking",
-                "Home Puja",
-                "Temple Seva",
-                "Puja Samagri",
-                "Kundli",
-                "Muhurat",
-              ].map((item) => (
-                <a
-                  key={item}
-                  href="#"
+              {serviceLinks.map(({ label, to }) => (
+                <Link
+                  key={to}
+                  to={to}
                   className="
                     text-sm
                     text-white/45
@@ -304,8 +289,8 @@ const Footer = () => {
                     hover:text-white
                   "
                 >
-                  {item}
-                </a>
+                  {label}
+                </Link>
               ))}
             </div>
           </div>
@@ -341,7 +326,7 @@ const Footer = () => {
                   hover:text-white
                 "
               >
-                gaju@aapleguruji.in
+                office@aapleguruji.in
               </a>
 
               <p className="max-w-xs text-sm leading-6 text-white/30">
@@ -398,17 +383,11 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Aaple Guruji. All rights reserved.</p>
 
           <div className="flex flex-wrap gap-6">
-            <a href="#" className="transition-colors hover:text-white">
-              Privacy
-            </a>
-
-            <a href="#" className="transition-colors hover:text-white">
-              Terms
-            </a>
-
-            <a href="#" className="transition-colors hover:text-white">
-              Refund Policy
-            </a>
+            {legalLinks.map((item) => (
+              <a key={item} href="#" className="transition-colors hover:text-white">
+                {item}
+              </a>
+            ))}
           </div>
 
           <p className="flex items-center gap-1">

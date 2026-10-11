@@ -78,13 +78,13 @@ const BookingForm = ({ preselectedPuja, pujas }) => {
             setValue("pincode", pincode);
             toast.success("Location detected successfully");
           }
-        } catch (error) {
+        } catch {
           toast.error("Failed to get address from location");
         } finally {
           setLocating(false);
         }
       },
-      (error) => {
+      () => {
         setLocating(false);
         toast.error("Failed to get your location. Please enable location services.");
       }
@@ -122,7 +122,7 @@ const BookingForm = ({ preselectedPuja, pujas }) => {
       setOtpVerified(false);
       setOtp("");
     }
-  }, [watchedEmail]);
+  }, [watchedEmail, preselectedPuja?.email]);
 
   useEffect(() => {
     const fetchPricing = async () => {

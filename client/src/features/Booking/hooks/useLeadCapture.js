@@ -5,12 +5,11 @@ export const useLeadCapture = (email, shouldCapture = false) => {
   useEffect(() => {
     if (!shouldCapture || !email) return;
 
-    const handleBeforeUnload = async () => {
-      try {
-        await api.post("/leads/abandon", { email });
-      } catch (error) {
-        console.error("Failed to mark lead as abandoned:", error);
-      }
+    const handleBeforeUnload = () => {
+      const endpoint = api.getUri({ url: "/leads/abandon" });
+      const payload = new URLSearchParams({ email });
+
+      navigator.sendBeacon(endpoint, payload);
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);

@@ -4,7 +4,7 @@ const loadFromLocalStorage = () => {
   try {
     const userState = localStorage.getItem("userVerification");
     return userState ? JSON.parse(userState) : null;
-  } catch (error) {
+  } catch {
     return null;
   }
 };
@@ -33,7 +33,7 @@ const userSlice = createSlice({
       };
       saveToLocalStorage(state.user);
     },
-    setEmailVerified: (state, action) => {
+    setEmailVerified: (state) => {
       state.user = {
         ...state.user,
         emailVerified: true,

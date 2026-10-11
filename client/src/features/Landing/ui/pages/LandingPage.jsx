@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import CTASection from "../components/CTASection";
 import TestimonialsSection from "../components/TestimonialSection";
 import Footer from "../components/Footer";
 import { CIcon } from "@coreui/icons-react";
 import { cibWhatsapp } from "@coreui/icons";
+import useLandingHook from "../../hooks/useLandingHook.jsx";
 
 const LandingPage = () => {
+  const { dispatch, getPuja } = useLandingHook();
+  useEffect(() => {
+    dispatch(getPuja());
+  }, [dispatch, getPuja]);
+
   return (
     <main className="w-full overflow-hidden bg-[#080604]">
       <HeroSection />

@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Sparkles, ArrowRight, Search } from "lucide-react";
 import Navbar from "../../../../shared/ui/components/Navbar";
 import Footer from "../../../Landing/ui/components/Footer";
 import PoojaCard from "../../../Landing/ui/components/PoojaCard";
+import { getPuja } from "../../../Landing/state/pujaAction";
 
 const PujasPage = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const pujas = useSelector((state) => state.puja.pujas);
   const [searchTerm, setSearchTerm] = React.useState("");
   const [selectedCategory, setSelectedCategory] = React.useState("All");
+
+  useEffect(() => {
+    if (!pujas) {
+      dispatch(getPuja());
+    }
+  }, [pujas, dispatch]);
 
   const categories = ["All", ...new Set(pujas?.map(p => p.category) || [])];
 

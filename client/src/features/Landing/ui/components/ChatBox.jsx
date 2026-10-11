@@ -1,10 +1,11 @@
 import React from "react";
 import { X, MessageSquare, Send } from "lucide-react";
-import LandingHook from "../../hooks/LandingHook";
+import useLandingHook from "../../hooks/useLandingHook";
 
 const ChatBox = ({ isOpen, onClose }) => {
+  const { handleSend, sendBtnRef } = useLandingHook();
+
   if (!isOpen) return null;
-  let { handleSend, sendBtnRef } = LandingHook();
 
   return (
     <div className="fixed bottom-24 right-7 z-50 w-80 md:w-96">

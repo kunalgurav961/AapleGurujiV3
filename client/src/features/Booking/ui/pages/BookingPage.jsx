@@ -1,18 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import Navbar from "../../../../shared/ui/components/Navbar";
 import Footer from "../../../Landing/ui/components/Footer";
 import BookingForm from "../components/BookingForm";
+import { getPuja } from "../../../Landing/state/pujaAction";
 
 const BookingPage = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
   const preselectedPujaId = searchParams.get("pujaId");
   const pujas = useSelector((state) => state.puja.pujas);
   const [selectedPuja, setSelectedPuja] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetch pujas if not already loaded
+    if (!pujas) {
+      dispatch(getPuja());
+    }
+  }, [pujas, dispatch]);
 
   useEffect(() => {
     if (preselectedPujaId && pujas) {

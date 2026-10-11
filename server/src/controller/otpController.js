@@ -47,7 +47,6 @@ export const requestOTP = async (req, res) => {
 
     await otpModel.create({
       email,
-      otp,
       otpHash,
       expiresAt,
     });
