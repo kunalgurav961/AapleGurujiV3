@@ -1,6 +1,5 @@
 
 import { useRef } from "react";
-import { getPuja, getPujaById } from "../state/pujaAction";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 
@@ -16,8 +15,6 @@ const useLandingHook = () => {
         sendBtnRef,
         handleSend,
         textAreaRef,
-        getPuja,
-        getPujaById,
         dispatch,
         navigate
     }

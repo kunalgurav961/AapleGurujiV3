@@ -1,23 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams, useNavigate } from "react-router";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { ArrowLeft, Calendar, Clock, MapPin, Sparkles } from "lucide-react";
 
 import Footer from "../components/Footer";
-import { getPujaById } from "../../state/pujaAction";
 import Navbar from "../../../../shared/ui/components/Navbar";
 
 const PujaDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const puja = useSelector((state) => state.puja.selectedPuja);
-
-  useEffect(() => {
-    if (id) {
-      dispatch(getPujaById(id));
-    }
-  }, [id, dispatch]);
+  const pujas = useSelector((state) => state.puja.pujas);
+  const puja = pujas?.find((p) => p._id === id);
 
   if (!puja) {
     return (
